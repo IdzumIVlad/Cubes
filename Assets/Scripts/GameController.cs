@@ -127,7 +127,7 @@ public class GameController : MonoBehaviour
             MoveCameraChangeBg();
 
         }
-        if (!IsLose && allCubesRb.velocity.magnitude > 0.1f)
+        if (!IsLose && allCubesRb.linearVelocity.magnitude > 0.1f)
         {
             Destroy(cubeToPlace.gameObject);
             IsLose = true;
